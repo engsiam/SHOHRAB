@@ -34,7 +34,7 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="py-section-gap bg-surface-container-lowest">
+    <section id="about" ref={sectionRef} className="py-section-gap bg-gradient-to-b from-surface-container-lowest to-surface-container-low">
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="about-item">

@@ -30,7 +30,7 @@ export default function Preloader() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="fixed inset-0 z-[9999] bg-background flex items-center justify-center"
+          className="fixed inset-0 z-[9999] bg-gradient-to-b from-background via-surface-container-lowest to-background flex items-center justify-center"
         >
           <div className="text-center">
             <motion.div

@@ -62,7 +62,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" ref={sectionRef} className="py-section-gap px-8">
+    <section id="projects" ref={sectionRef} className="py-section-gap px-8 bg-gradient-to-b from-surface-container to-surface-container-lowest">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>

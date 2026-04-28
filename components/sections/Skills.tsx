@@ -25,7 +25,7 @@ export default function Skills() {
   }, []);
 
   return (
-    <section id="skills" ref={sectionRef} className="py-section-gap px-8">
+    <section id="skills" ref={sectionRef} className="py-section-gap px-8 bg-gradient-to-b from-background to-surface-container-lowest">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 skill-card">
           <span className="font-label-caps text-primary-fixed uppercase tracking-[0.2em] mb-4 block">Technical Expertise</span>

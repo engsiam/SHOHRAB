@@ -24,7 +24,7 @@ export default function Experience() {
   }, []);
 
   return (
-    <section id="experience" ref={sectionRef} className="py-section-gap bg-gradient-to-b from-surface-container-low to-surface-container-lowest relative">
+    <section id="experience" ref={sectionRef} className="py-section-gap bg-gradient-to-b from-surface-container-low to-surface-container relative">
       <div className="max-w-5xl mx-auto px-8 relative">
         <div className="text-center mb-20 exp-item">
           <span className="font-label-caps text-primary-fixed uppercase tracking-[0.2em] mb-4 block">Professional Journey</span>
