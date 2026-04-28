@@ -31,7 +31,7 @@ export default function Experience() {
           <h2 className="font-h2 text-h2 text-white">Experience</h2>
         </div>
 
-        <div className="absolute left-1/2 top-[220px] bottom-10 w-px timeline-gradient hidden md:block"></div>
+        <div className="absolute left-1/2 top-[220px] bottom-10 w-px timeline-gradient line-glow hidden md:block"></div>
 
         <div className="space-y-16">
           {/* Infinisoft */}

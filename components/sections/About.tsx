@@ -1,8 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { gsap } from '@/lib/animations/gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap, ScrollTrigger } from '@/lib/animations/gsap';
 import { useRef, useEffect } from 'react';
 
 export default function About() {
@@ -10,17 +9,28 @@ export default function About() {
 
   useEffect(() => {
     if (!sectionRef.current) return;
+    
+    const elements = sectionRef.current.querySelectorAll('.about-item');
+    
     gsap.fromTo(
-      sectionRef.current.querySelectorAll('.about-item'),
+      elements,
       { y: 50, opacity: 0 },
       {
         y: 0,
         opacity: 1,
         stagger: 0.2,
         duration: 1,
-        scrollTrigger: { trigger: sectionRef.current, start: 'top 80%' },
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 80%',
+          toggleActions: 'play none none reverse'
+        },
       }
     );
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
   }, []);
 
   return (

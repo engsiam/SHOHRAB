@@ -32,14 +32,101 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: neon-pulse 3s ease-in-out infinite;
+}
+
+@keyframes neon-pulse {
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(116, 245, 255, 0.3)); }
+  50% { filter: drop-shadow(0 0 16px rgba(116, 245, 255, 0.6)); }
 }
 
 .glow-button {
   box-shadow: 0 0 15px rgba(0, 219, 231, 0.2);
+  transition: all 0.3s ease;
 }
 
 .glow-button:hover {
-  box-shadow: 0 0 25px rgba(0, 219, 231, 0.4);
+  box-shadow: 0 0 30px rgba(0, 219, 231, 0.6), 0 0 60px rgba(0, 219, 231, 0.3);
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Line glow effect */
+.line-glow {
+  position: relative;
+}
+
+.line-glow::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent, #00dbe7, transparent);
+  opacity: 0.5;
+  animation: line-flow 3s linear infinite;
+}
+
+@keyframes line-flow {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+/* Card hover effects */
+.glass-card {
+  background: rgba(22, 27, 34, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(116, 245, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(116, 245, 255, 0.4);
+  box-shadow: 0 0 30px rgba(0, 242, 255, 0.08), 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px);
+}
+
+/* Input focus glow */
+input:focus, textarea:focus {
+  box-shadow: 0 0 20px rgba(0, 219, 231, 0.15), inset 0 0 20px rgba(0, 219, 231, 0.05);
+}
+
+/* Link underline animation */
+a:not(.no-underline) {
+  position: relative;
+}
+
+a:not(.no-underline)::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #74f5ff, #0266ff);
+  transition: width 0.3s ease;
+}
+
+a:not(.no-underline):hover::after {
+  width: 100%;
+}
+
+/* Floating icon glow */
+.floating-icon {
+  animation: icon-float 4s ease-in-out infinite, icon-glow 3s ease-in-out infinite;
+}
+
+@keyframes icon-glow {
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(116, 245, 255, 0.3)); }
+  50% { filter: drop-shadow(0 0 16px rgba(116, 245, 255, 0.6)); }
+}
+
+/* Hero background gradient animation */
+.hero-bg-animated {
+  background: radial-gradient(circle at 50% 50%, rgba(0, 219, 231, 0.05), transparent 70%);
+  animation: hero-gradient-move 8s ease-in-out infinite alternate;
+}
+
+@keyframes hero-gradient-move {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-5%, 3%) scale(1.1); }
 }
 
 .timeline-gradient {

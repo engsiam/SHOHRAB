@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import Preloader from '@/components/ui/preloader';
 import AnimationProvider from '@/components/providers/AnimationProvider';
 import ScrollToTop from '@/components/ui/scroll-to-top';
 
@@ -32,11 +33,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
       </head>
       <body className="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
-        <AnimationProvider />
+        <Preloader />
         <Navbar />
         <main className="relative">{children}</main>
         <Footer />
-        <ScrollToTop />
       </body>
     </html>
   );
