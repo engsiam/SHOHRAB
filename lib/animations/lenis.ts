@@ -12,11 +12,10 @@ export const initLenis = () => {
   lenis = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    smooth: true,
   });
 
-  lenis.on('scroll', (e) => ScrollTrigger.update(e));
-  gsap.ticker.add((time) => lenis?.raf(time * 1000));
+  lenis.on('scroll', () => ScrollTrigger.update());
+  gsap.ticker.add(() => lenis?.raf(performance.now()));
   gsap.ticker.lagSmoothing(0);
 
   return lenis;

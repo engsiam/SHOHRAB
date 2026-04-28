@@ -40,9 +40,9 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
-        <Button className="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold uppercase text-[10px] tracking-widest hover:scale-105 active:scale-95 transition-all">
+        <a href="https://drive.google.com/file/d/1pLO0mt9YhpjhNJIq6PWazFzpw9sRUmOt/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold uppercase text-[10px] tracking-widest hover:scale-105 active:scale-95 transition-all inline-block no-underline">
           Resume
-        </Button>
+        </a>
         <Sheet open={menuOpen} onOpenChange={toggleMenu}>
           <SheetTrigger asChild className="lg:hidden">
             <Button variant="ghost" size="icon"><Menu className="h-6 w-6" /></Button>

@@ -24,14 +24,14 @@ export default function Experience() {
   }, []);
 
   return (
-    <section id="experience" ref={sectionRef} className="py-section-gap bg-surface-container-low relative">
+    <section id="experience" ref={sectionRef} className="py-section-gap bg-gradient-to-b from-surface-container-low to-surface-container-lowest relative">
       <div className="max-w-5xl mx-auto px-8 relative">
         <div className="text-center mb-20 exp-item">
           <span className="font-label-caps text-primary-fixed uppercase tracking-[0.2em] mb-4 block">Professional Journey</span>
           <h2 className="font-h2 text-h2 text-white">Experience</h2>
         </div>
 
-        <div className="absolute left-1/2 top-[220px] bottom-10 w-px timeline-gradient line-glow hidden md:block"></div>
+        <div className="absolute left-1/2 top-[220px] bottom-10 w-[2px] bg-primary-fixed/50 hidden md:block z-10" style={{ boxShadow: '0 0 8px rgba(0, 219, 231, 0.5)' }}></div>
 
         <div className="space-y-16">
           {/* Infinisoft */}

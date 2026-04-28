@@ -75,18 +75,18 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-6 mb-12 hero-text-item">
-            <a className="glow-button bg-secondary-container text-on-secondary-container px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 active:scale-95" href="#projects">View Projects</a>
-            <a className="border border-outline-variant hover:border-primary-fixed text-on-surface px-8 py-4 rounded-xl font-bold transition-all hover:bg-surface-container-low" href="#">Download Resume</a>
+            <a className="glow-button bg-secondary-container text-on-secondary-container px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 active:scale-95 hover:border-transparent" href="#projects">View Projects</a>
+            <a className="border border-outline-variant text-on-surface px-8 py-4 rounded-xl font-bold transition-all hover:bg-surface-container-low hover:border-0" href="https://drive.google.com/file/d/1pLO0mt9YhpjhNJIq6PWazFzpw9sRUmOt/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download Resume</a>
           </div>
 
           <div className="flex gap-6 items-center hero-text-item">
             <span className="text-label-caps text-outline uppercase">Connect</span>
             <div className="w-12 h-[1px] bg-outline-variant"></div>
-            <a className="text-on-surface hover:text-primary-fixed transition-colors flex items-center gap-2 no-underline" href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <a className="text-on-surface hover:text-primary-fixed transition-colors flex items-center gap-2 no-underline" href="https://github.com/engsiam" target="_blank" rel="noopener noreferrer">
               <Github className="w-5 h-5" />
               <span className="text-xs font-bold uppercase tracking-widest">GitHub</span>
             </a>
-            <a className="text-on-surface hover:text-primary-fixed transition-colors flex items-center gap-2 no-underline" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            <a className="text-on-surface hover:text-primary-fixed transition-colors flex items-center gap-2 no-underline" href="https://https://www.linkedin.com/in/md-shohrab-hossain-14745133/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-5 h-5" />
               <span className="text-xs font-bold uppercase tracking-widest">LinkedIn</span>
             </a>

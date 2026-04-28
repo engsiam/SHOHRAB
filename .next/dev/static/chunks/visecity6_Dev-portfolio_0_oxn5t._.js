@@ -183,7 +183,7 @@ function Hero() {
                                 className: "flex flex-wrap gap-6 mb-12 hero-text-item",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        className: "glow-button bg-secondary-container text-on-secondary-container px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 active:scale-95",
+                                        className: "glow-button bg-secondary-container text-on-secondary-container px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 active:scale-95 hover:border-transparent",
                                         href: "#projects",
                                         children: "View Projects"
                                     }, void 0, false, {
@@ -192,8 +192,10 @@ function Hero() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        className: "border border-outline-variant hover:border-primary-fixed text-on-surface px-8 py-4 rounded-xl font-bold transition-all hover:bg-surface-container-low",
-                                        href: "#",
+                                        className: "border border-outline-variant text-on-surface px-8 py-4 rounded-xl font-bold transition-all hover:bg-surface-container-low hover:border-0",
+                                        href: "https://drive.google.com/file/d/1pLO0mt9YhpjhNJIq6PWazFzpw9sRUmOt/view?usp=sharing",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
                                         children: "Download Resume"
                                     }, void 0, false, {
                                         fileName: "[project]/visecity6/Dev-portfolio/components/sections/Hero.tsx",
@@ -226,7 +228,7 @@ function Hero() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         className: "text-on-surface hover:text-primary-fixed transition-colors flex items-center gap-2 no-underline",
-                                        href: "https://github.com/yourusername",
+                                        href: "https://github.com/engsiam",
                                         target: "_blank",
                                         rel: "noopener noreferrer",
                                         children: [
@@ -253,7 +255,7 @@ function Hero() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         className: "text-on-surface hover:text-primary-fixed transition-colors flex items-center gap-2 no-underline",
-                                        href: "https://linkedin.com/in/yourusername",
+                                        href: "https://https://www.linkedin.com/in/md-shohrab-hossain-14745133/",
                                         target: "_blank",
                                         rel: "noopener noreferrer",
                                         children: [

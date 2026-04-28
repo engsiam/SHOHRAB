@@ -51,22 +51,25 @@
 }
 
 /* Line glow effect */
-.line-glow {
-  position: relative;
-}
-
-.line-glow::after {
-  content: '';
-  position: absolute;
-  inset: 0;
+.timeline-gradient {
   background: linear-gradient(to bottom, transparent, #00dbe7, transparent);
-  opacity: 0.5;
-  animation: line-flow 3s linear infinite;
 }
 
-@keyframes line-flow {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(100%); }
+/* Animated glowing vertical line */
+.timeline-line-animated {
+  position: relative;
+  animation: timeline-glow 3s ease-in-out infinite;
+}
+
+@keyframes timeline-glow {
+  0%, 100% { 
+    opacity: 0.6; 
+    box-shadow: 0 0 5px rgba(0, 219, 231, 0.3);
+  }
+  50% { 
+    opacity: 1; 
+    box-shadow: 0 0 20px rgba(0, 219, 231, 0.8), 0 0 40px rgba(0, 219, 231, 0.4);
+  }
 }
 
 /* Card hover effects */
@@ -104,9 +107,9 @@ a:not(.no-underline)::after {
   transition: width 0.3s ease;
 }
 
-a:not(.no-underline):hover::after {
+/* a:not(.no-underline):hover::after {
   width: 100%;
-}
+} */
 
 /* Floating icon glow */
 .floating-icon {

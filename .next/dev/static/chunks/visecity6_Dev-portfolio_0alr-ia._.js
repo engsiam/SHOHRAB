@@ -212,7 +212,7 @@ const projects = [
             'MONGODB',
             'EXPRESS'
         ],
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBq3WQKOBSV8veVEzVC3w24XE-_YlNlZsT6SXiNlxUwRyvWKcb5ZpbP0je5_Oi6z3Mblt90QSQR2XSVgmpi6RWhCbSLJAsjnRG2pcY0Biwgp9rCEkox7gGEXo84zPxe6noTiLe2FA1y0wV9gAt2YbJwRWkIiI7hq7BQolq3HLkfB5lVXhP8jB20MnY8IuV2_AUoT15d-YYx6RQJPX5nld5uqEGvuj2leVDOiFGT2CuO3cfPfSsV4ch3xGfsr_YQAMpCGWw0N-D_Og',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
         liveUrl: '#',
         githubUrl: '#',
         className: 'md:col-span-12'
@@ -223,9 +223,10 @@ const projects = [
         description: 'High-performance blogging engine with Redis caching, advanced search capabilities, and automated content moderation.',
         techStack: [
             'TYPESCRIPT',
-            'REDIS'
+            'REDIS',
+            'NODE.JS'
         ],
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBr9UBQvIBrE_LdHGMS1RVl6SaPV1a29CQwqx9TBn63oPnnEpnZTLpvNt84AgnprzAt_5Ga6mCiNSWLG6iRc3_2_-mJ49ym_vnVxyNVLP3IrOPHdtUPg3vum4PnY0UrBRjILLC798TtUy0_bZH6m8AxAtW8m8xziZTew03mPQbAV0vdsyFNlBM5XlQRM9FPrq0sZx_U743RX_E0v5dV7qcraCVY6QVjLrRWXX1kBVE9lniXSx-ou1uxjY0F16UrE60ozCZo72JN8mo',
+        image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop',
         liveUrl: '#',
         githubUrl: '#',
         className: 'md:col-span-6'
@@ -236,9 +237,10 @@ const projects = [
         description: 'Complex state-managed dashboard for inventory logistics with real-time data visualization and offline support.',
         techStack: [
             'REACT',
-            'REDUX'
+            'REDUX',
+            'TYPESCRIPT'
         ],
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBlTqmSgk6-KqvGA4cfE-ND3psrnRaI10OfQvOQP0ipgtflpiCLu28RgR5UYBNViUD971HhqWv8PF5FYdbRDv8vxUR-v6kgGFYh1rHFJ9k-HSYItSrDO3dutszYWHXRdkXb1ekYzmYhWAXviGXvi9SMGMa4d5fUMsAQnElb03_A2dYmxU9NqO3YUh9UhVzxYHjpiEc1dihexxkUaEvcoSFmX5F_x-m3AU6CUHDBYBJOKAoA1Orwqv-gQEqAIAfKj0TzjL0TSLVOwLU',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop',
         liveUrl: '#',
         githubUrl: '#',
         className: 'md:col-span-6'
@@ -303,7 +305,9 @@ function Projects() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 className: "text-primary-fixed hover:text-white transition-colors flex items-center gap-2 group text-xs font-bold tracking-widest uppercase",
-                                href: "#",
+                                href: "https://github.com/engsiam?tab=repositories",
+                                target: "_blank",
+                                rel: "noopener noreferrer",
                                 children: [
                                     "VIEW ALL REPOS ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -328,76 +332,78 @@ function Projects() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-1 md:grid-cols-12 gap-8",
-                        children: projects.map((project)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `${project.className} glass-card rounded-3xl overflow-hidden group project-card`,
+                        children: projects.map((project, index)=>{
+                            const isFeatured = index === 0;
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: `glass-card rounded-3xl overflow-hidden group project-card ${isFeatured ? 'md:col-span-12' : 'md:col-span-6'}`,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: project.id === '1' ? 'grid grid-cols-1 md:grid-cols-2' : '',
+                                    className: `grid ${isFeatured ? 'md:grid-cols-2' : 'grid-cols-1'}`,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: project.id === '1' ? 'h-[350px] overflow-hidden relative' : 'h-60 overflow-hidden',
+                                            className: "relative w-full aspect-[16/10] overflow-hidden",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                     src: project.image,
                                                     alt: project.title,
                                                     fill: true,
-                                                    className: "object-cover group-hover:scale-105 transition-transform duration-700"
+                                                    className: "object-cover transition-transform duration-700 group-hover:scale-105"
                                                 }, void 0, false, {
                                                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                                    lineNumber: 82,
-                                                    columnNumber: 19
+                                                    lineNumber: 95,
+                                                    columnNumber: 3
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-colors"
+                                                    className: "absolute inset-0 bg-slate-950/30 group-hover:bg-transparent transition-all duration-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                                    lineNumber: 83,
-                                                    columnNumber: 19
+                                                    lineNumber: 101,
+                                                    columnNumber: 3
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                            lineNumber: 81,
-                                            columnNumber: 17
+                                            lineNumber: 94,
+                                            columnNumber: 10
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: project.id === '1' ? 'p-10 flex flex-col justify-center' : 'p-8',
+                                            className: "p-6 md:p-8 flex flex-col justify-center",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex gap-2 mb-6",
+                                                    className: "flex flex-wrap gap-2 mb-4",
                                                     children: project.techStack.map((tech)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "px-2 py-0.5 bg-primary-fixed/10 text-primary-fixed rounded-full text-[10px] font-bold",
+                                                            className: "px-2 py-1 bg-primary-fixed/10 text-primary-fixed rounded-full text-[10px] font-bold",
                                                             children: tech
                                                         }, tech, false, {
                                                             fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                                            lineNumber: 88,
-                                                            columnNumber: 23
+                                                            lineNumber: 108,
+                                                            columnNumber: 17
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                                    lineNumber: 86,
-                                                    columnNumber: 19
+                                                    lineNumber: 106,
+                                                    columnNumber: 13
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "font-h3 text-2xl text-white mb-4",
+                                                    className: "text-xl md:text-2xl font-bold text-white mb-3",
                                                     children: project.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                                    lineNumber: 91,
-                                                    columnNumber: 19
+                                                    lineNumber: 117,
+                                                    columnNumber: 13
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-on-surface-variant font-body-md mb-8",
+                                                    className: "text-on-surface-variant text-sm md:text-base mb-6",
                                                     children: project.description
                                                 }, void 0, false, {
                                                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                                    lineNumber: 92,
-                                                    columnNumber: 19
+                                                    lineNumber: 121,
+                                                    columnNumber: 13
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex gap-4",
+                                                    className: "flex gap-3",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                                            className: "bg-primary-container text-on-primary-container px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all hover:shadow-[0_0_20px_rgba(0,242,255,0.4)]",
+                                                            className: "bg-primary-container text-on-primary-container px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-widest transition-all hover:shadow-[0_0_20px_rgba(0,242,255,0.4)]",
                                                             onClick: ()=>{
                                                                 setSelectedProject(project);
                                                                 toggleProjectModal();
@@ -405,47 +411,50 @@ function Projects() {
                                                             children: "View Details"
                                                         }, void 0, false, {
                                                             fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                                            lineNumber: 94,
-                                                            columnNumber: 21
+                                                            lineNumber: 126,
+                                                            columnNumber: 15
                                                         }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                            className: "p-2.5 border border-outline-variant rounded-xl hover:bg-surface-container-high transition-colors",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                            href: project.liveUrl,
+                                                            target: "_blank",
+                                                            className: "px-5 py-2 border border-outline-variant rounded-xl hover:bg-surface-container-high transition-all",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "material-symbols-outlined text-sm",
                                                                 children: "launch"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                                                lineNumber: 101,
-                                                                columnNumber: 23
+                                                                lineNumber: 141,
+                                                                columnNumber: 17
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                                            lineNumber: 100,
-                                                            columnNumber: 21
+                                                            lineNumber: 136,
+                                                            columnNumber: 15
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                                    lineNumber: 93,
-                                                    columnNumber: 19
+                                                    lineNumber: 125,
+                                                    columnNumber: 13
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                            lineNumber: 85,
-                                            columnNumber: 17
+                                            lineNumber: 105,
+                                            columnNumber: 11
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                    lineNumber: 80,
-                                    columnNumber: 15
+                                    lineNumber: 88,
+                                    columnNumber: 9
                                 }, this)
                             }, project.id, false, {
                                 fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                lineNumber: 79,
-                                columnNumber: 13
-                            }, this))
+                                lineNumber: 82,
+                                columnNumber: 7
+                            }, this);
+                        })
                     }, void 0, false, {
                         fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
                         lineNumber: 77,
@@ -469,20 +478,20 @@ function Projects() {
                                     children: selectedProject?.title
                                 }, void 0, false, {
                                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                    lineNumber: 114,
+                                    lineNumber: 157,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
                                     children: selectedProject?.description
                                 }, void 0, false, {
                                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                    lineNumber: 115,
+                                    lineNumber: 158,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                            lineNumber: 113,
+                            lineNumber: 156,
                             columnNumber: 11
                         }, this),
                         selectedProject && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -497,12 +506,12 @@ function Projects() {
                                         className: "object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                        lineNumber: 120,
+                                        lineNumber: 163,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                    lineNumber: 119,
+                                    lineNumber: 162,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -512,12 +521,12 @@ function Projects() {
                                             children: tech
                                         }, tech, false, {
                                             fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                            lineNumber: 124,
+                                            lineNumber: 167,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                    lineNumber: 122,
+                                    lineNumber: 165,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -532,12 +541,12 @@ function Projects() {
                                                 children: "Live Demo"
                                             }, void 0, false, {
                                                 fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                                lineNumber: 131,
+                                                lineNumber: 174,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                            lineNumber: 130,
+                                            lineNumber: 173,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -550,35 +559,35 @@ function Projects() {
                                                 children: "Source Code"
                                             }, void 0, false, {
                                                 fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                                lineNumber: 134,
+                                                lineNumber: 177,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                            lineNumber: 133,
+                                            lineNumber: 176,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                                    lineNumber: 129,
+                                    lineNumber: 172,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                            lineNumber: 118,
+                            lineNumber: 161,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                    lineNumber: 112,
+                    lineNumber: 155,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/visecity6/Dev-portfolio/components/sections/Projects.tsx",
-                lineNumber: 111,
+                lineNumber: 154,
                 columnNumber: 7
             }, this)
         ]
