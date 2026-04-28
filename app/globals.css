@@ -27,7 +27,7 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  opacity: 0.05;
+  opacity: 0.03;
   background-image: 
     linear-gradient(to right, #00f2ff 1px, transparent 1px),
     linear-gradient(to bottom, #00f2ff 1px, transparent 1px);
@@ -36,15 +36,26 @@ body::before {
   z-index: 1;
 }
 
+/* HERO GRADIENTS */
+.hero-glow {
+  background: radial-gradient(circle at 50% 30%, rgba(0,242,255,0.10), transparent 65%);
+}
+
+.hero-fade {
+  background: linear-gradient(to bottom, transparent 50%, #020617);
+}
+
 .glass-card {
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-card:hover {
-  border-color: rgba(0, 242, 255, 0.3);
+  border-color: rgba(0, 242, 255, 0.2);
   box-shadow: 0 0 30px rgba(0, 242, 255, 0.06);
+  transform: translateY(-4px);
 }
 
 .gradient-text {

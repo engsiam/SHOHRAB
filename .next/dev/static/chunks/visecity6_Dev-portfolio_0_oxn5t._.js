@@ -16,7 +16,15 @@ __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f
 const initGSAP = ()=>{
     __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$gsap$40$3$2e$15$2e$0$2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["gsap"].defaults({
         ease: 'power2.out',
-        duration: 0.8
+        duration: 0.6
+    });
+    // Global ScrollTrigger settings
+    __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$gsap$40$3$2e$15$2e$0$2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollTrigger"].defaults({
+        start: 'top 85%',
+        end: 'bottom 60%',
+        invalidateOnRefresh: true,
+        once: true,
+        toggleActions: 'play none none none'
     });
 };
 ;
@@ -68,17 +76,17 @@ function Hero() {
         }
     }["Hero.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020617]",
+        className: "relative min-h-[110vh] flex items-center justify-center overflow-hidden bg-[#020617]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(0,242,255,0.15),transparent_70%)]"
+                className: "absolute inset-0 hero-glow"
             }, void 0, false, {
                 fileName: "[project]/visecity6/Dev-portfolio/components/sections/Hero.tsx",
                 lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-[linear-gradient(to_bottom,transparent,#020617)]"
+                className: "absolute inset-0 hero-fade"
             }, void 0, false, {
                 fileName: "[project]/visecity6/Dev-portfolio/components/sections/Hero.tsx",
                 lineNumber: 34,
@@ -88,7 +96,7 @@ function Hero() {
                 className: "relative z-10 text-center max-w-5xl px-6",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mb-6 inline-block px-4 py-1 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-400 text-xs tracking-widest uppercase",
+                        className: "mb-6 inline-block px-4 py-1 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-400 text-xs tracking-widest uppercase",
                         children: "Available for new projects"
                     }, void 0, false, {
                         fileName: "[project]/visecity6/Dev-portfolio/components/sections/Hero.tsx",
@@ -112,7 +120,7 @@ function Hero() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-white max-w-xl mx-auto mb-12 text-lg leading-relaxed",
+                        className: "text-white/80 max-w-xl mx-auto mb-12 text-lg leading-relaxed",
                         children: "Architecting high-performance scalable systems and intuitive digital experiences with a focus on precision and clean engineering."
                     }, void 0, false, {
                         fileName: "[project]/visecity6/Dev-portfolio/components/sections/Hero.tsx",
@@ -120,17 +128,17 @@ function Hero() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative w-96 h-96 mx-auto mb-12",
+                        className: "relative w-96 h-96 md:w-80 md:h-80 mx-auto mb-12",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute inset-0 rounded-full bg-cyan-400/20 blur-3xl animate-pulse"
+                                className: "absolute inset-0 rounded-full bg-cyan-400/15 blur-3xl animate-pulse"
                             }, void 0, false, {
                                 fileName: "[project]/visecity6/Dev-portfolio/components/sections/Hero.tsx",
                                 lineNumber: 64,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute inset-0 rounded-full border border-cyan-400/40 shadow-[0_0_50px_rgba(0,242,255,0.6)]"
+                                className: "absolute inset-0 rounded-full border border-cyan-400/30 shadow-[0_0_40px_rgba(0,242,255,0.4)]"
                             }, void 0, false, {
                                 fileName: "[project]/visecity6/Dev-portfolio/components/sections/Hero.tsx",
                                 lineNumber: 65,
@@ -158,8 +166,10 @@ function Hero() {
                                 __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$0$2e$400$2e$0_react$40$19$2e$2$2e$5$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$brain$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Brain$3e$__["Brain"],
                                 __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$0$2e$400$2e$0_react$40$19$2e$2$2e$5$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__["Globe"]
                             ].map((Icon, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    ref: (el)=>floatingRefs.current[i] = el,
-                                    className: "absolute w-12 h-12 rounded-xl bg-white/5 backdrop-blur border border-white/10 flex items-center justify-center shadow-lg",
+                                    ref: (el)=>{
+                                        floatingRefs.current[i] = el;
+                                    },
+                                    className: "absolute w-12 h-12 rounded-xl bg-[rgba(255,255,255,0.02)] backdrop-blur border border-white/5 flex items-center justify-center shadow-lg hover:border-cyan-400/30 hover:-translate-y-1 transition-all duration-300",
                                     style: {
                                         top: i === 0 ? '-20px' : i === 1 ? '50%' : 'auto',
                                         left: i === 1 ? '-30px' : 'auto',
@@ -189,7 +199,7 @@ function Hero() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#projects",
-                                className: "px-7 py-3 bg-cyan-400 text-black rounded-xl font-semibold hover:scale-105 transition",
+                                className: "px-7 py-3 bg-cyan-400 text-black rounded-xl font-semibold hover:scale-105 hover:shadow-[0_0_30px_rgba(0,242,255,0.5)] transition-all duration-300",
                                 children: "View Projects ↓"
                             }, void 0, false, {
                                 fileName: "[project]/visecity6/Dev-portfolio/components/sections/Hero.tsx",
@@ -198,7 +208,7 @@ function Hero() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#contact",
-                                className: "px-7 py-3 border border-white/20 text-white rounded-xl hover:bg-white/10 transition",
+                                className: "px-7 py-3 border border-white/20 text-white rounded-xl hover:bg-white/10 hover:border-white/30 transition-all duration-300",
                                 children: "Let's Talk"
                             }, void 0, false, {
                                 fileName: "[project]/visecity6/Dev-portfolio/components/sections/Hero.tsx",

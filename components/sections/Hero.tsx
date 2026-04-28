@@ -25,19 +25,19 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020617]">
+    <section className="relative min-h-[110vh] flex items-center justify-center overflow-hidden bg-[#020617]">
 
-      {/* HERO RADIAL GRADIENT */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(0,242,255,0.15),transparent_70%)]" />
+      {/* HERO RADIAL GRADIENT - OPTIMIZED */}
+      <div className="absolute inset-0 hero-glow" />
       
       {/* FADE TO BLEND */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent,#020617)]" />
+      <div className="absolute inset-0 hero-fade" />
 
       {/* CONTENT */}
       <div className="relative z-10 text-center max-w-5xl px-6">
 
         {/* Badge */}
-        <div className="mb-6 inline-block px-4 py-1 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-400 text-xs tracking-widest uppercase">
+        <div className="mb-6 inline-block px-4 py-1 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-400 text-xs tracking-widest uppercase">
           Available for new projects
         </div>
 
@@ -52,17 +52,17 @@ export default function Hero() {
         </h2>
 
         {/* Description */}
-        <p className="text-white max-w-xl mx-auto mb-12 text-lg leading-relaxed">
+        <p className="text-white/80 max-w-xl mx-auto mb-12 text-lg leading-relaxed">
           Architecting high-performance scalable systems and intuitive digital experiences
           with a focus on precision and clean engineering.
         </p>
 
-        {/* 🔥 BIG AVATAR */}
-        <div className="relative w-96 h-96 mx-auto mb-12">
+        {/* 🔥 BIG AVATAR - INCREASED SIZE */}
+        <div className="relative w-96 h-96 md:w-80 md:h-80 mx-auto mb-12">
 
           {/* glow layers */}
-          <div className="absolute inset-0 rounded-full bg-cyan-400/20 blur-3xl animate-pulse"></div>
-          <div className="absolute inset-0 rounded-full border border-cyan-400/40 shadow-[0_0_50px_rgba(0,242,255,0.6)]"></div>
+          <div className="absolute inset-0 rounded-full bg-cyan-400/15 blur-3xl animate-pulse"></div>
+          <div className="absolute inset-0 rounded-full border border-cyan-400/30 shadow-[0_0_40px_rgba(0,242,255,0.4)]"></div>
 
           {/* image */}
           <div className="absolute inset-3 rounded-full overflow-hidden border border-white/10">
@@ -78,8 +78,8 @@ export default function Hero() {
           {[Code, Brain, Globe].map((Icon, i) => (
             <div
               key={i}
-              ref={(el) => (floatingRefs.current[i] = el)}
-              className="absolute w-12 h-12 rounded-xl bg-white/5 backdrop-blur border border-white/10 flex items-center justify-center shadow-lg"
+              ref={(el) => { floatingRefs.current[i] = el; }}
+              className="absolute w-12 h-12 rounded-xl bg-[rgba(255,255,255,0.02)] backdrop-blur border border-white/5 flex items-center justify-center shadow-lg hover:border-cyan-400/30 hover:-translate-y-1 transition-all duration-300"
               style={{
                 top: i === 0 ? '-20px' : i === 1 ? '50%' : 'auto',
                 left: i === 1 ? '-30px' : 'auto',
@@ -94,11 +94,11 @@ export default function Hero() {
 
         {/* CTA */}
         <div className="flex justify-center gap-6">
-          <a href="#projects" className="px-7 py-3 bg-cyan-400 text-black rounded-xl font-semibold hover:scale-105 transition">
+          <a href="#projects" className="px-7 py-3 bg-cyan-400 text-black rounded-xl font-semibold hover:scale-105 hover:shadow-[0_0_30px_rgba(0,242,255,0.5)] transition-all duration-300">
             View Projects ↓
           </a>
 
-          <a href="#contact" className="px-7 py-3 border border-white/20 text-white rounded-xl hover:bg-white/10 transition">
+          <a href="#contact" className="px-7 py-3 border border-white/20 text-white rounded-xl hover:bg-white/10 hover:border-white/30 transition-all duration-300">
             Let's Talk
           </a>
         </div>
