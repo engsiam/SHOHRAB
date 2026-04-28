@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>OG Image - SHOHRAB</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1200px;
+      height: 630px;
+      background: #0b0f14;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Grotesk', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(0, 219, 231, 0.05), transparent 70%);
+    }
+    .brand {
+      font-size: 180px;
+      font-weight: 900;
+      background: linear-gradient(90deg, #74f5ff, #0266ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 20px rgba(116, 245, 255, 0.5));
+      z-index: 1;
+    }
+    .subtitle {
+      font-size: 32px;
+      color: #b9cacb;
+      margin-top: 20px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+    .line {
+      width: 400px;
+      height: 3px;
+      background: linear-gradient(90deg, #74f5ff, #0266ff);
+      margin-top: 30px;
+      border-radius: 2px;
+      z-index: 1;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="brand">SHOHRAB</div>
+  <div class="subtitle">Senior Software Engineer</div>
+  <div class="line"></div>
+</body>
+</html>

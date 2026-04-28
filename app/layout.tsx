@@ -7,6 +7,7 @@ import AnimationProvider from '@/components/providers/AnimationProvider';
 import ScrollToTop from '@/components/ui/scroll-to-top';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://shohrab.dev'),
   title: 'MD. Shohrab Hossain | Senior Software Engineer Portfolio',
   description: 'Senior Software Engineer specializing in MERN stack. Building scalable, high-performance web and mobile applications.',
   openGraph: {
@@ -19,8 +20,8 @@ export const metadata: Metadata = {
     type: 'website',
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
     apple: '/apple-touch-icon.png',
   },
 };
