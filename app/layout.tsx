@@ -5,6 +5,7 @@ import Footer from '@/components/layout/Footer';
 import Preloader from '@/components/ui/preloader';
 import AnimationProvider from '@/components/providers/AnimationProvider';
 import ScrollToTop from '@/components/ui/scroll-to-top';
+import MouseGlow from '@/components/providers/MouseGlow';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://shohrab.dev'),
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
         <Preloader />
+        <MouseGlow />
         <Navbar />
         <main className="relative">{children}</main>
         <Footer />

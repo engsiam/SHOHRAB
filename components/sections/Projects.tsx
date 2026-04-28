@@ -36,9 +36,9 @@ const projects = [
   title: 'LuxeMart — High-Performance E-Commerce Frontend',
   description: 'A production-grade e-commerce frontend built with Next.js and GSAP, featuring advanced animations, Zustand state management, and a highly optimized, responsive user experience.',
   techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'GSAP', 'Zustand'],
-  image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop',
-  liveUrl: '#',
-  githubUrl: '#',
+  image: 'https://i.ibb.co.com/FbLJGv0K/lux.png',
+  liveUrl: 'https://luxmart-a7jp.vercel.app',
+  githubUrl: 'https://github.com/engsiam/luxmart',
   className: 'md:col-span-6'
 },
 ];
