@@ -3,7 +3,7 @@ import { Github, Linkedin, Globe } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="w-full py-16 mt-32 bg-surface-container-lowest border-t border-white/5">
+    <footer className="w-full py-8 md:py-16 mt-16 md:mt-32 bg-surface-container-lowest border-t border-white/5">
       <div className="max-w-7xl mx-auto px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-12 mb-12">
           <div className="text-3xl font-black tracking-tighter text-white uppercase font-['Space_Grotesk']">SHOHRAB</div>

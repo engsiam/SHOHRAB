@@ -42,23 +42,26 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
-        <a href="https://drive.google.com/file/d/1pLO0mt9YhpjhNJIq6PWazFzpw9sRUmOt/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold uppercase text-[10px] tracking-widest hover:scale-105 active:scale-95 transition-all inline-block no-underline">
-          Resume
-        </a>
+        <a href="https://drive.google.com/file/d/1pLO0mt9YhpjhNJIq6PWazFzpw9sRUmOt/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hidden lg:inline-block bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold uppercase text-[10px] tracking-widest hover:scale-105 active:scale-95 transition-all no-underline">
+           Resume
+         </a>
         <Sheet open={menuOpen} onOpenChange={toggleMenu}>
-          <SheetTrigger asChild className="lg:hidden">
-            <Button variant="ghost" size="icon"><Menu className="h-6 w-6" /></Button>
-          </SheetTrigger>
-          <SheetContent side="right" className="w-[250px] bg-[rgba(2,6,23,0.9)] backdrop-blur-2xl border-white/5">
-            <div className="flex flex-col gap-6 mt-8">
-              {navLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="text-lg text-muted-foreground hover:text-foreground" onClick={toggleMenu}>
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </SheetContent>
-        </Sheet>
+           <SheetTrigger asChild className="lg:hidden">
+             <Button variant="ghost" size="icon"><Menu className="h-6 w-6" /></Button>
+           </SheetTrigger>
+           <SheetContent side="right" className="w-[300px] sm:w-[350px] bg-[rgba(2,6,23,0.95)] backdrop-blur-2xl border-white/5">
+             <div className="flex flex-col gap-6 mt-12">
+               {navLinks.map((link) => (
+                 <Link key={link.href} href={link.href} className="text-lg text-slate-400 hover:text-cyan-300 transition-all" onClick={toggleMenu}>
+                   {link.label}
+                 </Link>
+               ))}
+               <a href="https://drive.google.com/file/d/1pLO0mt9YhpjhNJIq6PWazFzpw9sRUmOt/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-bold uppercase text-[10px] tracking-widest hover:scale-105 transition-all inline-block no-underline text-center mt-4">
+                 Resume
+               </a>
+             </div>
+           </SheetContent>
+         </Sheet>
       </div>
     </nav>
   );

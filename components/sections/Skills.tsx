@@ -32,7 +32,7 @@ export default function Skills() {
   }, []);
 
   return (
-    <section id="skills" ref={sectionRef} className="py-section-gap px-8 relative">
+    <section id="skills" ref={sectionRef} className="py-16 md:py-section-gap px-4 md:px-8 relative">
       <div className="absolute top-0 left-0 right-0 h-px bg-[rgba(255,255,255,0.05)]"></div>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 skill-card">

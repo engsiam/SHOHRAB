@@ -70,7 +70,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" ref={sectionRef} className="py-section-gap px-8 relative">
+    <section id="projects" ref={sectionRef} className="py-16 md:py-section-gap px-4 md:px-8 relative">
       <div className="absolute top-0 left-0 right-0 h-px bg-[rgba(255,255,255,0.05)]"></div>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">

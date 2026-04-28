@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 
-
-
 <html class="dark" lang="en"><head>
 
 <meta charset="utf-8"/>
@@ -310,19 +308,19 @@
 
 <h1 class="font-h1 text-h1 text-on-surface mb-6 leading-tight">
 
-&#x20;                   Building Scalable and <br/>
+&#x20; Building Scalable and <br/>
 
 <span class="gradient-text">High-Performance</span> <br/>
 
-&#x20;                   Applications
+&#x20; Applications
 
-&#x20;               </h1>
+&#x20; </h1>
 
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
 
-&#x20;                   Senior Software Engineer specializing in the MERN stack. I design and build mission-critical scalable systems and high-concurrency mobile applications that deliver exceptional user experiences.
+&#x20; Senior Software Engineer specializing in the MERN stack. I design and build mission-critical scalable systems and high-concurrency mobile applications that deliver exceptional user experiences.
 
-&#x20;               </p>
+&#x20; </p>
 
 <div class="flex flex-wrap gap-6 mb-12">
 
@@ -478,7 +476,7 @@
 
 <div class="mb-6 flex items-center justify-between">
 
-<span class="material-symbols-outlined text-3xl text-primary-fixed">desktop\_windows</span>
+<span class="material-symbols-outlined text-3xl text-primary-fixed">desktop_windows</span>
 
 <span class="font-label-caps text-xs text-primary-fixed">Frontend</span>
 
@@ -756,7 +754,7 @@
 
 <a class="text-primary-fixed hover:text-white transition-colors flex items-center gap-2 group text-xs font-bold tracking-widest uppercase" href="#">
 
-&#x20;                   VIEW ALL REPOS <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow\_right\_alt</span>
+&#x20; VIEW ALL REPOS <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
 
 </a>
 
@@ -832,7 +830,7 @@
 
 <p class="text-on-surface-variant font-body-md mb-6">High-performance blogging engine with Redis caching, advanced search capabilities, and automated content moderation.</p>
 
-<button class="text-primary-fixed font-bold text-xs uppercase tracking-widest flex items-center gap-2 group/btn">DETAILS <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow\_forward</span></button>
+<button class="text-primary-fixed font-bold text-xs uppercase tracking-widest flex items-center gap-2 group/btn">DETAILS <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span></button>
 
 </div>
 
@@ -862,7 +860,7 @@
 
 <p class="text-on-surface-variant font-body-md mb-6">Complex state-managed dashboard for inventory logistics with real-time data visualization and offline support.</p>
 
-<button class="text-primary-fixed font-bold text-xs uppercase tracking-widest flex items-center gap-2 group/btn">DETAILS <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow\_forward</span></button>
+<button class="text-primary-fixed font-bold text-xs uppercase tracking-widest flex items-center gap-2 group/btn">DETAILS <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span></button>
 
 </div>
 
@@ -920,7 +918,7 @@
 
 <div class="w-12 h-12 rounded-xl bg-secondary-container/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
 
-<span class="material-symbols-outlined">workspace\_premium</span>
+<span class="material-symbols-outlined">workspace_premium</span>
 
 </div>
 
@@ -1091,4 +1089,3 @@
 </footer>
 
 </body></html>
-

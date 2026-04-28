@@ -12,14 +12,14 @@ export default function ScrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  if (scrollY < 300) return null;
+  if (scrollY < 100) return null;
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
-      className="fixed bottom-8 right-8 z-50"
+       className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-50"
     >
       <Button
         onClick={handleScrollToTop}

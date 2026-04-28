@@ -153,17 +153,16 @@ export default function Hero() {
 
   return (
     <section 
-      className="relative min-h-[110vh] flex items-center justify-center overflow-hidden bg-[#020617]"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020617] py-20 sm:py-0"
       onMouseMove={handleMouseMove}
     >
       <div className="absolute inset-0 hero-glow" />
       <div className="absolute inset-0 hero-fade" />
 
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 w-full h-full z-0 pointer-events-none"
-        style={{ minHeight: '110vh' }}
-      />
+       <canvas
+         ref={canvasRef}
+         className="absolute inset-0 w-full h-full z-0 pointer-events-none"
+       />
 
       <div
         className="absolute pointer-events-none z-10"
@@ -177,55 +176,55 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-20 text-center max-w-5xl px-6">
-        <div className="mb-6 inline-block px-4 py-1 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-400 text-xs tracking-widest uppercase">
+      <div className="relative z-20 text-center max-w-5xl px-4 sm:px-6">
+        <div className="mb-4 sm:mb-6 inline-block px-3 sm:px-4 py-1 rounded-full border border-cyan-400/15 bg-cyan-400/5 text-cyan-400 text-[10px] sm:text-xs tracking-widest uppercase">
           Available for new projects
         </div>
 
-        <h1 className="text-5xl md:text-6xl font-bold text-white mb-3">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 sm:mb-3">
           MD. Shohrab Hossain
         </h1>
 
-        <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4 sm:mb-6">
           Software Engineer
         </h2>
 
-        <p className="text-white/80 max-w-xl mx-auto mb-12 text-md leading-relaxed py-4">
+        <p className="text-white/80 max-w-xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base md:text-lg leading-relaxed px-2 sm:px-0">
           Architecting high-performance scalable systems and intuitive digital experiences
           with a focus on precision and clean engineering.
         </p>
 
-        <div className="relative w-96 h-96 md:w-80 md:h-80 mx-auto mb-12">
+        <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 mx-auto mb-8 sm:mb-12">
           <div className="absolute inset-0 rounded-full bg-cyan-400/15 blur-3xl animate-pulse"></div>
           <div className="absolute inset-0 rounded-full border border-cyan-400/30 shadow-[0_0_40px_rgba(0,242,255,0.4)]"></div>
 
           <div className="absolute inset-3 rounded-full overflow-hidden border border-white/10">
-            <Image
-              src="/shohrab.jpg"
-              alt="Shohrab"
-              fill
-              className="object-container"
-            />
+               <Image
+               src="/shohrab.jpg"
+               alt="Shohrab"
+               fill
+               className="object-cover"
+             />
           </div>
 
           {floatingIcons.map(({ Icon, style }, i) => (
-            <div
-              key={i}
-              ref={(el) => { floatingRefs.current[i] = el; }}
-              className="absolute w-16 h-16 rounded-xl bg-[rgba(255,255,255,0.05)] backdrop-blur border border-cyan-400/20 flex items-center justify-center shadow-lg hover:border-cyan-400/50 hover:-translate-y-1 transition-all duration-300"
-              style={style}
-            >
-              <Icon className="w-8 h-8 text-cyan-400" />
-            </div>
-          ))}
+             <div
+               key={i}
+               ref={(el) => { floatingRefs.current[i] = el; }}
+               className="absolute w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-[rgba(255,255,255,0.05)] backdrop-blur border border-cyan-400/20 flex items-center justify-center shadow-lg hover:border-cyan-400/50 hover:-translate-y-1 transition-all duration-300"
+               style={style}
+             >
+               <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-cyan-400" />
+             </div>
+           ))}
         </div>
 
-        <div className="flex justify-center gap-6 pt-4">
-          <a href="#projects" className="px-7 py-3 bg-cyan-400 text-black rounded-xl font-semibold hover:scale-105 hover:shadow-[0_0_30px_rgba(0,242,255,0.5)] transition-all duration-300">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 pt-4">
+          <a href="#projects" className="px-6 sm:px-7 py-3 bg-cyan-400 text-black rounded-xl font-semibold hover:scale-105 hover:shadow-[0_0_30px_rgba(0,242,255,0.5)] transition-all duration-300 text-sm sm:text-base">
             View Projects ↓
           </a>
 
-          <a href="#contact" className="px-7 py-3 border border-white/20 text-white rounded-xl hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+          <a href="#contact" className="px-6 sm:px-7 py-3 border border-white/20 text-white rounded-xl hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-sm sm:text-base">
             Let's Talk 👋
           </a>
         </div>

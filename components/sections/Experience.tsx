@@ -31,7 +31,7 @@ export default function Experience() {
   }, []);
 
   return (
-    <section id="experience" ref={sectionRef} className="py-section-gap relative">
+    <section id="experience" ref={sectionRef} className="py-16 md:py-section-gap relative">
       <div className="absolute top-0 left-0 right-0 h-px bg-[rgba(255,255,255,0.04)]"></div>
       <div className="max-w-5xl mx-auto px-8 relative">
           <div className="text-center mb-20 exp-item">
