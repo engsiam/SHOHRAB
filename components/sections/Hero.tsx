@@ -80,14 +80,16 @@ export default function Hero() {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    const particles = Array.from({ length: 80 }, () => ({
+    const particles = Array.from({ length: 150 }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      size: Math.random() * 1.5 + 0.3,
-      speedX: (Math.random() - 0.5) * 0.15,
-      speedY: (Math.random() - 0.5) * 0.15,
-      opacity: Math.random() * 0.4 + 0.1,
+      size: Math.random() * 4 + 1,
+      speedX: (Math.random() - 0.5) * 0.1,
+      speedY: (Math.random() - 0.5) * 0.1,
+      opacity: Math.random() * 0.6 + 0.2,
       hue: Math.random() * 60 + 180,
+      type: Math.random() > 0.6 ? 'glow' : Math.random() > 0.5 ? 'ring' : 'dot',
+      trail: [] as { x: number; y: number }[],
     }));
 
     const animate = () => {
@@ -96,13 +98,42 @@ export default function Hero() {
         p.x += p.speedX;
         p.y += p.speedY;
 
+        p.trail.push({ x: p.x, y: p.y });
+        if (p.trail.length > 12) p.trail.shift();
+
         if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
         if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
 
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(${p.hue}, 100%, 60%, ${p.opacity})`;
-        ctx.fill();
+        if (p.trail.length > 1) {
+          p.trail.forEach((point, i) => {
+            const alpha = (i / p.trail.length) * p.opacity * 0.3;
+            ctx.beginPath();
+            ctx.arc(point.x, point.y, p.size * 0.5, 0, Math.PI * 2);
+            ctx.fillStyle = `hsla(${p.hue}, 100%, 60%, ${alpha})`;
+            ctx.fill();
+          });
+        }
+
+        if (p.type === 'glow') {
+          const gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size * 4);
+          gradient.addColorStop(0, `hsla(${p.hue}, 100%, 70%, ${p.opacity})`);
+          gradient.addColorStop(1, `hsla(${p.hue}, 100%, 70%, 0)`);
+          ctx.fillStyle = gradient;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size * 4, 0, Math.PI * 2);
+          ctx.fill();
+        } else if (p.type === 'ring') {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size * 1.5, 0, Math.PI * 2);
+          ctx.strokeStyle = `hsla(${p.hue}, 100%, 60%, ${p.opacity})`;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        } else {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          ctx.fillStyle = `hsla(${p.hue}, 100%, 60%, ${p.opacity})`;
+          ctx.fill();
+        }
       });
       requestAnimationFrame(animate);
     };
@@ -131,6 +162,7 @@ export default function Hero() {
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full z-0 pointer-events-none"
+        style={{ minHeight: '110vh' }}
       />
 
       <div
@@ -158,7 +190,7 @@ export default function Hero() {
           Software Engineer
         </h2>
 
-        <p className="text-white/80 max-w-xl mx-auto mb-12 text-lg leading-relaxed">
+        <p className="text-white/80 max-w-xl mx-auto mb-12 text-md leading-relaxed py-4">
           Architecting high-performance scalable systems and intuitive digital experiences
           with a focus on precision and clean engineering.
         </p>
@@ -188,13 +220,13 @@ export default function Hero() {
           ))}
         </div>
 
-        <div className="flex justify-center gap-6">
+        <div className="flex justify-center gap-6 pt-4">
           <a href="#projects" className="px-7 py-3 bg-cyan-400 text-black rounded-xl font-semibold hover:scale-105 hover:shadow-[0_0_30px_rgba(0,242,255,0.5)] transition-all duration-300">
             View Projects ↓
           </a>
 
           <a href="#contact" className="px-7 py-3 border border-white/20 text-white rounded-xl hover:bg-white/10 hover:border-white/30 transition-all duration-300">
-            Let's Talk
+            Let's Talk 👋
           </a>
         </div>
       </div>
