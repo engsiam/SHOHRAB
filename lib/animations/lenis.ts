@@ -11,15 +11,17 @@ export const initLenis = () => {
 
   lenis = new Lenis({
     duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    smooth: true,
-    smoothTouch: false,
-  });
+    easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  } as any);
 
   // CRITICAL: ScrollerProxy for Lenis
   ScrollTrigger.scrollerProxy(document.body, {
-    scrollTop(value) {
-      return arguments.length ? lenis?.scrollTo(value, { immediate: true }) : lenis?.scroll;
+    scrollTop(value?: number) {
+      if (arguments.length && typeof value === 'number') {
+        lenis?.scrollTo(value, { immediate: true });
+        return;
+      }
+      return lenis?.scroll || 0;
     },
     getBoundingClientRect() {
       return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
@@ -37,7 +39,7 @@ export const initLenis = () => {
   gsap.ticker.lagSmoothing(0);
 
   // Refresh ScrollTrigger on Lenis resize
-  lenis.on('resize', () => ScrollTrigger.refresh());
+  (lenis as any).on('resize', () => ScrollTrigger.refresh());
 
   return lenis;
 };
