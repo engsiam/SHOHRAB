@@ -15,3 +15,8 @@
 {"timestamp":"00:00:26.764","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\u001b[39m"}
 {"timestamp":"00:00:26.765","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop\\\" has \\\"fill\\\" but is missing \\\"sizes\\\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\\u001b[39m\" \"\\u001b[2m(file://E:/siam files/visecity6/Dev-portfolio/.next/dev/static/chunks/0i6f_next_dist_047wcm-._.js:2431:13)\\u001b[22m\""}
 {"timestamp":"00:00:26.765","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\u001b[39m"}
+{"timestamp":"00:03:37.455","source":"Server","level":"LOG","message":"✓ Compiled in 1066ms"}
+{"timestamp":"00:03:38.189","source":"Server","level":"LOG","message":"✓ Compiled in 62ms"}
+{"timestamp":"00:03:43.450","source":"Server","level":"LOG","message":"✓ Compiled in 51ms"}
+{"timestamp":"00:03:55.618","source":"Server","level":"LOG","message":"✓ Compiled in 73ms"}
+{"timestamp":"00:03:59.161","source":"Server","level":"LOG","message":"✓ Compiled in 60ms"}

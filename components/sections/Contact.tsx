@@ -36,11 +36,11 @@ export default function Contact() {
             <div className="space-y-6">
               <div className="flex items-center gap-6 glass-card p-6 rounded-2xl group hover:-translate-x-2 transition-all">
                 <div className="w-12 h-12 rounded-xl bg-primary-fixed/10 flex items-center justify-center text-primary-fixed"><span className="material-symbols-outlined">mail</span></div>
-                <div><div className="text-[10px] font-bold text-outline uppercase tracking-widest mb-1">Email</div><div className="text-white font-bold">contact@shohrab.dev</div></div>
+                <div><div className="text-[10px] font-bold text-outline uppercase tracking-widest mb-1">Email</div><div className="text-white font-bold">shohrab.hossain@gmail.com</div></div>
               </div>
               <div className="flex items-center gap-6 glass-card p-6 rounded-2xl group hover:-translate-x-2 transition-all">
                 <div className="w-12 h-12 rounded-xl bg-secondary-container/10 flex items-center justify-center text-secondary"><span className="material-symbols-outlined">call</span></div>
-                <div><div className="text-[10px] font-bold text-outline uppercase tracking-widest mb-1">Phone</div><div className="text-white font-bold">+880 1234 567890</div></div>
+                <div><div className="text-[10px] font-bold text-outline uppercase tracking-widest mb-1">Phone</div><div className="text-white font-bold">+880 01742 080475</div></div>
               </div>
               <div className="flex items-center gap-6 glass-card p-6 rounded-2xl group hover:-translate-x-2 transition-all">
                 <div className="w-12 h-12 rounded-xl bg-tertiary-fixed/10 flex items-center justify-center text-tertiary-fixed-dim"><span className="material-symbols-outlined">location_on</span></div>
