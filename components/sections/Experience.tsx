@@ -39,7 +39,7 @@ export default function Experience() {
           <h2 className="font-h2 text-h2 text-white">Experience</h2>
         </div>
 
-        <div className="absolute left-1/2 top-[220px] bottom-10 w-[1px] bg-[rgba(255,255,255,0.04)] hidden md:block z-10"></div>
+        <div className="absolute left-1/2 top-[220px] bottom-10 w-[2px] bg-gradient-to-b from-cyan-400 via-cyan-400/50 to-transparent hidden md:block z-10 shadow-[0_0_15px_rgba(0,242,255,0.8)]"></div>
 
         <div className="space-y-16">
           {/* Infinisoft */}

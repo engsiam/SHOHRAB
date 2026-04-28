@@ -169,24 +169,24 @@ function Hero() {
                                     ref: (el)=>{
                                         floatingRefs.current[i] = el;
                                     },
-                                    className: "absolute w-12 h-12 rounded-xl bg-[rgba(255,255,255,0.02)] backdrop-blur border border-white/5 flex items-center justify-center shadow-lg hover:border-cyan-400/30 hover:-translate-y-1 transition-all duration-300",
+                                    className: "absolute w-16 h-16 rounded-xl bg-[rgba(255,255,255,0.05)] backdrop-blur border border-cyan-400/20 flex items-center justify-center shadow-lg hover:border-cyan-400/50 hover:-translate-y-1 transition-all duration-300",
                                     style: {
-                                        top: i === 0 ? '-20px' : i === 1 ? '50%' : 'auto',
-                                        left: i === 1 ? '-30px' : 'auto',
-                                        right: i === 0 ? '-20px' : i === 2 ? '-30px' : 'auto',
-                                        bottom: i === 2 ? '-20px' : 'auto'
+                                        top: i === 0 ? '-30px' : i === 1 ? '50%' : 'auto',
+                                        left: i === 1 ? '-40px' : 'auto',
+                                        right: i === 0 ? '-30px' : i === 2 ? '-40px' : 'auto',
+                                        bottom: i === 2 ? '-30px' : 'auto'
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                                        className: "w-5 h-5 text-cyan-400"
+                                        className: "w-8 h-8 text-cyan-400"
                                     }, void 0, false, {
                                         fileName: "[project]/visecity6/Dev-portfolio/components/sections/Hero.tsx",
                                         lineNumber: 90,
-                                        columnNumber: 15
+                                        columnNumber: 16
                                     }, this)
                                 }, i, false, {
                                     fileName: "[project]/visecity6/Dev-portfolio/components/sections/Hero.tsx",
                                     lineNumber: 79,
-                                    columnNumber: 13
+                                    columnNumber: 14
                                 }, this))
                         ]
                     }, void 0, true, {

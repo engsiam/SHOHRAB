@@ -132,27 +132,28 @@ export default function Projects() {
               {project.description}
             </p>
 
-            <div className="flex gap-3">
-              <Button
-                className="bg-primary-container text-on-primary-container px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-widest transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(0,242,255,0.4)] duration-300"
-                onClick={() => {
-                  setSelectedProject(project);
-                  toggleProjectModal();
-                }}
-              >
-                View Details
-              </Button>
+             <div className="flex gap-3">
+               <Button
+                 className="bg-primary-container text-on-primary-container px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-widest transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(0,242,255,0.4)] duration-300"
+                 onClick={() => {
+                   setSelectedProject(project);
+                   toggleProjectModal();
+                 }}
+               >
+                 View Details
+               </Button>
 
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                className="px-5 py-2 border border-white/20 rounded-xl hover:bg-white/10 hover:border-white/30 transition-all duration-300"
-              >
-                <span className="material-symbols-outlined text-sm">
-                  launch
-                </span>
-              </a>
-            </div>
+               <a
+                 href={project.liveUrl}
+                 target="_blank"
+                 className="px-5 py-2 bg-cyan-400/10 border border-cyan-400/30 rounded-xl hover:bg-cyan-400/20 hover:border-cyan-400/50 transition-all duration-300 flex items-center gap-2"
+               >
+                 <span className="material-symbols-outlined text-sm text-cyan-400">
+                   launch
+                 </span>
+                 <span className="text-cyan-400 text-xs font-bold uppercase tracking-widest">Live Demo</span>
+               </a>
+             </div>
           </div>
         </div>
       </div>
@@ -161,36 +162,36 @@ export default function Projects() {
 </div>
       </div>
 
-      <Dialog open={isProjectModalOpen} onOpenChange={toggleProjectModal}>
-        <DialogContent className="max-w-2xl">
-          <DialogHeader>
-            <DialogTitle>{selectedProject?.title}</DialogTitle>
-            <DialogDescription>{selectedProject?.description}</DialogDescription>
-          </DialogHeader>
-          {selectedProject && (
-            <div className="space-y-4">
-              <div className="relative h-64 w-full rounded-lg overflow-hidden">
-                <Image src={selectedProject.image} alt={selectedProject.title} fill className="object-cover" />
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {selectedProject.techStack.map((tech) => (
-                  <span key={tech} className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="flex gap-4">
-                <Button asChild>
-                  <a href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer">Live Demo</a>
-                </Button>
-                <Button variant="outline" asChild>
-                  <a href={selectedProject.githubUrl} target="_blank" rel="noopener noreferrer">Source Code</a>
-                </Button>
-              </div>
-            </div>
-          )}
-        </DialogContent>
-      </Dialog>
+       <Dialog open={isProjectModalOpen} onOpenChange={toggleProjectModal}>
+         <DialogContent className="max-w-2xl bg-[#0f172a] border-cyan-400/20">
+           <DialogHeader>
+             <DialogTitle className="text-white">{selectedProject?.title}</DialogTitle>
+             <DialogDescription className="text-white/80">{selectedProject?.description}</DialogDescription>
+           </DialogHeader>
+           {selectedProject && (
+             <div className="space-y-4">
+               <div className="relative h-64 w-full rounded-lg overflow-hidden">
+                 <Image src={selectedProject.image} alt={selectedProject.title} fill className="object-cover" />
+               </div>
+               <div className="flex flex-wrap gap-2">
+                 {selectedProject.techStack.map((tech) => (
+                   <span key={tech} className="px-3 py-1 text-sm bg-cyan-400/10 text-cyan-400 rounded-full border border-cyan-400/20">
+                     {tech}
+                   </span>
+                 ))}
+               </div>
+               <div className="flex gap-4">
+                 <Button className="bg-cyan-400 text-black hover:bg-cyan-300 hover:shadow-[0_0_20px_rgba(0,242,255,0.5)]" asChild>
+                   <a href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer">Live Demo</a>
+                 </Button>
+                 <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:border-white/30" asChild>
+                   <a href={selectedProject.githubUrl} target="_blank" rel="noopener noreferrer">Source Code</a>
+                 </Button>
+               </div>
+             </div>
+           )}
+         </DialogContent>
+       </Dialog>
     </section>
   );
 }

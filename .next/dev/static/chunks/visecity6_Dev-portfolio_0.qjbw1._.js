@@ -116,7 +116,7 @@ function Experience() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute left-1/2 top-[220px] bottom-10 w-[1px] bg-[rgba(255,255,255,0.04)] hidden md:block z-10"
+                        className: "absolute left-1/2 top-[220px] bottom-10 w-[2px] bg-gradient-to-b from-cyan-400 via-cyan-400/50 to-transparent hidden md:block z-10 shadow-[0_0_15px_rgba(0,242,255,0.8)]"
                     }, void 0, false, {
                         fileName: "[project]/visecity6/Dev-portfolio/components/sections/Experience.tsx",
                         lineNumber: 42,

@@ -74,22 +74,22 @@ export default function Hero() {
             />
           </div>
 
-          {/* 🔥 FLOATING ICONS */}
-          {[Code, Brain, Globe].map((Icon, i) => (
-            <div
-              key={i}
-              ref={(el) => { floatingRefs.current[i] = el; }}
-              className="absolute w-12 h-12 rounded-xl bg-[rgba(255,255,255,0.02)] backdrop-blur border border-white/5 flex items-center justify-center shadow-lg hover:border-cyan-400/30 hover:-translate-y-1 transition-all duration-300"
-              style={{
-                top: i === 0 ? '-20px' : i === 1 ? '50%' : 'auto',
-                left: i === 1 ? '-30px' : 'auto',
-                right: i === 0 ? '-20px' : i === 2 ? '-30px' : 'auto',
-                bottom: i === 2 ? '-20px' : 'auto',
-              }}
-            >
-              <Icon className="w-5 h-5 text-cyan-400" />
-            </div>
-          ))}
+           {/* 🔥 FLOATING ICONS */}
+           {[Code, Brain, Globe].map((Icon, i) => (
+             <div
+               key={i}
+               ref={(el) => { floatingRefs.current[i] = el; }}
+               className="absolute w-16 h-16 rounded-xl bg-[rgba(255,255,255,0.05)] backdrop-blur border border-cyan-400/20 flex items-center justify-center shadow-lg hover:border-cyan-400/50 hover:-translate-y-1 transition-all duration-300"
+               style={{
+                 top: i === 0 ? '-30px' : i === 1 ? '50%' : 'auto',
+                 left: i === 1 ? '-40px' : 'auto',
+                 right: i === 0 ? '-30px' : i === 2 ? '-40px' : 'auto',
+                 bottom: i === 2 ? '-30px' : 'auto',
+               }}
+             >
+               <Icon className="w-8 h-8 text-cyan-400" />
+             </div>
+           ))}
         </div>
 
         {/* CTA */}
