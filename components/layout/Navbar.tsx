@@ -31,9 +31,11 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/5 h-20">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-8 h-full">
         <div className="text-2xl font-black tracking-tighter text-white uppercase font-['Space_Grotesk']">
-          SHOHRAB
+          <Link href="#home" className="hover:text-cyan-300 transition-all">
+            SHOHRAB
+          </Link>
         </div>
-        <div className="hidden lg:flex items-center gap-6 font-['Space_Grotesk'] uppercase tracking-widest text-[10px] font-bold">
+        <div className="hidden lg:flex items-center gap-6 font-['Space_Grotesk'] uppercase tracking-widest text- font-bold">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="text-slate-400 hover:text-cyan-300 transition-all" onClick={closeMenu}>
               {link.label}
