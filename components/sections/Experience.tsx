@@ -24,7 +24,8 @@ export default function Experience() {
   }, []);
 
   return (
-    <section id="experience" ref={sectionRef} className="py-section-gap bg-gradient-to-b from-surface-container-low to-surface-container relative">
+    <section id="experience" ref={sectionRef} className="py-section-gap relative">
+      <div className="absolute top-0 left-0 right-0 h-px bg-[rgba(255,255,255,0.05)]"></div>
       <div className="max-w-5xl mx-auto px-8 relative">
         <div className="text-center mb-20 exp-item">
           <span className="font-label-caps text-primary-fixed uppercase tracking-[0.2em] mb-4 block">Professional Journey</span>
@@ -47,7 +48,7 @@ export default function Experience() {
               </ul>
             </div>
             <div className="absolute left-1/2 top-4 -translate-x-1/2 z-10 hidden md:block">
-              <div className="w-4 h-4 rounded-full bg-primary-container shadow-[0_0_15px_rgba(0,242,255,0.8)] border-4 border-slate-950"></div>
+              <div className="w-4 h-4 rounded-full bg-primary-container shadow-[0_0_15px_rgba(0,242,255,0.8)] border-4 border-surface-container"></div>
             </div>
             <div className="flex-1"></div>
           </div>
@@ -56,7 +57,7 @@ export default function Experience() {
           <div className="flex flex-col md:flex-row gap-12 items-start relative exp-item">
             <div className="flex-1"></div>
             <div className="absolute left-1/2 top-4 -translate-x-1/2 z-10 hidden md:block">
-              <div className="w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+              <div className="w-4 h-4 rounded-full bg-slate-700 border-4 border-surface-container"></div>
             </div>
             <div className="flex-1">
               <div className="inline-block px-4 py-1 rounded-full bg-surface-container-highest text-outline text-[10px] font-bold uppercase mb-4">JUNE 2020 - DEC 2021</div>

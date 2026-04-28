@@ -25,19 +25,13 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#020617]">
 
-      {/* 🔥 GRID BACKGROUND */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[#020617]" />
-
-        <div className="absolute inset-0 opacity-[0.08]
-          bg-[linear-gradient(to_right,#00f2ff_1px,transparent_1px),
-          linear-gradient(to_bottom,#00f2ff_1px,transparent_1px)]
-          bg-[size:70px_70px]" />
-
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(0,242,255,0.2),transparent_70%)]" />
-      </div>
+      {/* HERO RADIAL GRADIENT */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(0,242,255,0.15),transparent_70%)]" />
+      
+      {/* FADE TO BLEND */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent,#020617)]" />
 
       {/* CONTENT */}
       <div className="relative z-10 text-center max-w-5xl px-6">
@@ -64,7 +58,7 @@ export default function Hero() {
         </p>
 
         {/* 🔥 BIG AVATAR */}
-        <div className="relative w-64 h-64 mx-auto mb-12">
+        <div className="relative w-96 h-96 mx-auto mb-12">
 
           {/* glow layers */}
           <div className="absolute inset-0 rounded-full bg-cyan-400/20 blur-3xl animate-pulse"></div>
@@ -100,11 +94,11 @@ export default function Hero() {
 
         {/* CTA */}
         <div className="flex justify-center gap-6">
-          <a className="px-7 py-3 bg-cyan-400 text-black rounded-xl font-semibold hover:scale-105 transition">
+          <a href="#projects" className="px-7 py-3 bg-cyan-400 text-black rounded-xl font-semibold hover:scale-105 transition">
             View Projects ↓
           </a>
 
-          <a className="px-7 py-3 border border-white/20 text-white rounded-xl hover:bg-white/10 transition">
+          <a href="#contact" className="px-7 py-3 border border-white/20 text-white rounded-xl hover:bg-white/10 transition">
             Let's Talk
           </a>
         </div>

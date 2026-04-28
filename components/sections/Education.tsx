@@ -24,7 +24,8 @@ export default function Education() {
   }, []);
 
   return (
-    <section id="education" ref={sectionRef} className="py-section-gap bg-gradient-to-b from-surface-container-lowest to-surface-container-low">
+    <section id="education" ref={sectionRef} className="py-section-gap relative">
+      <div className="absolute top-0 left-0 right-0 h-px bg-[rgba(255,255,255,0.05)]"></div>
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div className="edu-item">

@@ -25,7 +25,8 @@ export default function Contact() {
   }, []);
 
   return (
-    <section id="contact" ref={sectionRef} className="py-section-gap px-8 bg-gradient-to-b from-surface-container-low to-background">
+    <section id="contact" ref={sectionRef} className="py-section-gap px-8 relative">
+      <div className="absolute top-0 left-0 right-0 h-px bg-[rgba(255,255,255,0.05)]"></div>
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div className="contact-item">

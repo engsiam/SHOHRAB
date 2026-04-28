@@ -356,7 +356,7 @@ function Navbar() {
         setScrollY
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-        className: "fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/5 h-20",
+        className: "fixed top-0 w-full z-50 bg-[rgba(2,6,23,0.6)] backdrop-blur-2xl border-b border-white/5 h-20",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex justify-between items-center max-w-7xl mx-auto px-8 h-full",
             children: [
@@ -433,7 +433,7 @@ function Navbar() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$components$2f$ui$2f$sheet$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SheetContent"], {
                             side: "right",
-                            className: "w-[250px]",
+                            className: "w-[250px] bg-[rgba(2,6,23,0.9)] backdrop-blur-2xl border-white/5",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex flex-col gap-6 mt-8",
                                 children: navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -537,7 +537,7 @@ function Preloader() {
             transition: {
                 duration: 0.5
             },
-            className: "fixed inset-0 z-[9999] bg-gradient-to-b from-background via-surface-container-lowest to-background flex items-center justify-center",
+            className: "fixed inset-0 z-[9999] bg-[#020617] flex items-center justify-center",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$visecity6$2f$Dev$2d$portfolio$2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$4_react$2d$dom$40$19$2e$2$2e$5_react$40$19$2e$2$2e$5_$5f$react$40$19$2e$2$2e$5$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "text-center",
                 children: [
@@ -556,7 +556,7 @@ function Preloader() {
                         },
                         className: "text-5xl md:text-7xl font-black tracking-tighter uppercase font-['Space_Grotesk'] gradient-text",
                         style: {
-                            filter: 'drop-shadow(0 0 20px rgba(116, 245, 255, 0.5))'
+                            filter: 'drop-shadow(0 0 20px rgba(0, 242, 255, 0.5))'
                         },
                         children: "SHOHRAB"
                     }, void 0, false, {
@@ -575,7 +575,7 @@ function Preloader() {
                             duration: 1.5,
                             delay: 0.5
                         },
-                        className: "h-0.5 bg-gradient-to-r from-primary-fixed to-secondary-container mt-4 mx-auto max-w-[200px]"
+                        className: "h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 mt-4 mx-auto max-w-[200px]"
                     }, void 0, false, {
                         fileName: "[project]/visecity6/Dev-portfolio/components/ui/preloader.tsx",
                         lineNumber: 47,
@@ -592,7 +592,7 @@ function Preloader() {
                             duration: 0.5,
                             delay: 0.8
                         },
-                        className: "text-outline font-label-caps text-xs uppercase tracking-[0.2em] mt-4",
+                        className: "text-slate-400 font-label-caps text-xs uppercase tracking-[0.2em] mt-4",
                         children: "Loading Portfolio..."
                     }, void 0, false, {
                         fileName: "[project]/visecity6/Dev-portfolio/components/ui/preloader.tsx",

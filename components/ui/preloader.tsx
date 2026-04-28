@@ -29,8 +29,8 @@ export default function Preloader() {
         <motion.div
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          className="fixed inset-0 z-[9999] bg-gradient-to-b from-background via-surface-container-lowest to-background flex items-center justify-center"
+          transition={{ duration:0.5 }}
+          className="fixed inset-0 z-[9999] bg-[#020617] flex items-center justify-center"
         >
           <div className="text-center">
             <motion.div
@@ -39,7 +39,7 @@ export default function Preloader() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-5xl md:text-7xl font-black tracking-tighter uppercase font-['Space_Grotesk'] gradient-text"
               style={{
-                filter: 'drop-shadow(0 0 20px rgba(116, 245, 255, 0.5))',
+                filter: 'drop-shadow(0 0 20px rgba(0, 242, 255, 0.5))',
               }}
             >
               SHOHRAB
@@ -48,13 +48,13 @@ export default function Preloader() {
               initial={{ width: 0 }}
               animate={{ width: '100%' }}
               transition={{ duration: 1.5, delay: 0.5 }}
-              className="h-0.5 bg-gradient-to-r from-primary-fixed to-secondary-container mt-4 mx-auto max-w-[200px]"
+              className="h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 mt-4 mx-auto max-w-[200px]"
             />
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
-              className="text-outline font-label-caps text-xs uppercase tracking-[0.2em] mt-4"
+              className="text-slate-400 font-label-caps text-xs uppercase tracking-[0.2em] mt-4"
             >
               Loading Portfolio...
             </motion.p>

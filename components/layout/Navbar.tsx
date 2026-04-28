@@ -28,7 +28,7 @@ export default function Navbar() {
   }, [setScrollY]);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/5 h-20">
+    <nav className="fixed top-0 w-full z-50 bg-[rgba(2,6,23,0.6)] backdrop-blur-2xl border-b border-white/5 h-20">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-8 h-full">
         <div className="text-2xl font-black tracking-tighter text-white uppercase font-['Space_Grotesk']">
           <Link href="#home" className="hover:text-cyan-300 transition-all">
@@ -49,7 +49,7 @@ export default function Navbar() {
           <SheetTrigger asChild className="lg:hidden">
             <Button variant="ghost" size="icon"><Menu className="h-6 w-6" /></Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[250px]">
+          <SheetContent side="right" className="w-[250px] bg-[rgba(2,6,23,0.9)] backdrop-blur-2xl border-white/5">
             <div className="flex flex-col gap-6 mt-8">
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href} className="text-lg text-muted-foreground hover:text-foreground" onClick={toggleMenu}>

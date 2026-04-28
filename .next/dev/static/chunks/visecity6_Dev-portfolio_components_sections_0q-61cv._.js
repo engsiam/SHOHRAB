@@ -27,8 +27,8 @@ __turbopack_context__.v((parentImport) => {
 
 __turbopack_context__.v((parentImport) => {
     return Promise.all([
-  "static/chunks/089~_gsap_04xrgxv._.js",
   "static/chunks/visecity6_Dev-portfolio_075r_sm._.js",
+  "static/chunks/089~_gsap_04xrgxv._.js",
   "static/chunks/visecity6_Dev-portfolio_components_sections_Skills_tsx_0h5xi13._.js"
 ].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
         return parentImport("[project]/visecity6/Dev-portfolio/components/sections/Skills.tsx [app-client] (ecmascript, next/dynamic entry)");

@@ -62,7 +62,8 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" ref={sectionRef} className="py-section-gap px-8 bg-gradient-to-b from-surface-container to-surface-container-lowest">
+    <section id="projects" ref={sectionRef} className="py-section-gap px-8 relative">
+      <div className="absolute top-0 left-0 right-0 h-px bg-[rgba(255,255,255,0.05)]"></div>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>
@@ -98,7 +99,7 @@ export default function Projects() {
     fill
     className="object-cover transition-transform duration-700 group-hover:scale-105"
   />
-  <div className="absolute inset-0 bg-slate-950/30 group-hover:bg-transparent transition-all duration-500"></div>
+  <div className="absolute inset-0 bg-surface-container/30 group-hover:bg-transparent transition-all duration-500"></div>
 </div>
 
           {/* Content */}
